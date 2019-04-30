@@ -1,0 +1,8 @@
+{% include 'partials/header.html' %}
+    <ul>
+      {% for post in api %}
+        <li><a href="/api/get_list/{{post.id}}">{{post.title}}</a>: {{post.text}}</li>
+
+      {% endfor %}
+    </ul>
+{% include 'partials/footer.html' %}
